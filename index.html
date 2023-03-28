@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gothic&display=swap');
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: #D5E1EF;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .card-container{
+      background-color: white;
+      width: 20%;
+      /* height: 68vh; */
+      align-content: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 20px;
+      margin-top: 120px;
+      margin-left: 600px;
+    }
+
+    .text{
+      text-align: center;
+      padding: 10px;
+      font-family: 'Noto Sans Gothic', sans-serif;
+      font-size: 12.8px;
+    }
+
+    .text h2{
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .text p{
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      margin: 15px;
+      font-weight: 400;
+      color: gray;
+    }
+
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Styling for phones */
+    @media only screen and (max-width: 375px) {
+     /* Insert your CSS styling for phones here */
+     .card-container{
+      background-color: white;
+      width: 90%;
+      align-content: center;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 20px;
+      margin-top: 100px;
+      margin-left: 18px;
+    }
+    }
+
+    /* Styling for destop */
+    @media only screen and (max-width: 1440px) {
+      .card-container{
+      background-color: white;
+      width: 60%;
+      align-content: center;
+      justify-content: center;
+      padding: 15px;
+      border-radius: 20px;
+      margin-top: 140px;
+      margin-left: 145px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <section class="card-container">
+    <div>
+      <div class="qr-image"><img src="./images/image-qr-code.png" alt="qr code"></div>
+      <div class="text">
+        <h2>Improve your front-end skills by building some projects</h2>
+        <p>Scan qr code to visit frontend mentor and take your coding skill to another level</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
